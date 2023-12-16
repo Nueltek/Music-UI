@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Music Landing Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="sidebar">
+          <div class="brand">
+            <img
+              src="imgs/logo.svg"
+              alt="blueray company's logo"
+              class="brand--log"
+            />
+            <p class="brand--name">BLUERAY</p>
+          </div>
+
+          <div class="menu">
+            <p class="menu--title">Menu</p>
+            <ul>
+              <li class="svg-hover focus">
+                <svg
+                  width="39"
+                  height="32"
+                  viewBox="0 0 45 36"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Data Histogram / undefined">
+                    <path
+                      id="vector--home"
+                      d="M15.9375 7.84571C15.9375 5.98175 17.8263 4.47071 20.1562 4.47071H24.8438C27.1736 4.47071 29.0625 5.98175 29.0625 7.84571V10.5007H35.1562C37.4861 10.5007 39.375 12.0117 39.375 13.8757V30.3757C39.375 30.997 38.7454 31.5007 37.9688 31.5007H7.03125C6.25461 31.5007 5.625 30.997 5.625 30.3757V18.3757C5.625 16.5117 7.5138 15.0007 9.84375 15.0007H15.9375V7.84571ZM18.75 29.2507H26.25V7.84571C26.25 7.22439 25.6204 6.72071 24.8438 6.72071H20.1562C19.3796 6.72071 18.75 7.22438 18.75 7.84571V29.2507ZM15.9375 17.2507H9.84375C9.06711 17.2507 8.4375 17.7544 8.4375 18.3757V29.2507H15.9375V17.2507ZM29.0625 29.2507H36.5625V13.8757C36.5625 13.2544 35.9329 12.7507 35.1562 12.7507H29.0625V29.2507Z"
+                      fill="#212121"
+                      fill-opacity="0.6"
+                      class="home--svg"
+                    />
+                  </g>
+                </svg>
+                <p class="home--p">Home</p>
+              </li>
+              <li class="svg-hover">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="39"
+                  height="32"
+                  viewBox="0 0 39 32"
+                  fill="none"
+                >
+                  <path
+                    d="M1.625 0C0.727545 0 0 0.651438 0 1.45501C0 2.25859 0.727545 2.91002 1.625 2.91002H37.375C38.2723 2.91002 39 2.25859 39 1.45501C39 0.651438 38.2723 0 37.375 0H1.625ZM7.9299 27.4567L9.34586 26.1902H1.625C0.727545 26.1902 0 26.8418 0 27.6452C0 28.4487 0.727545 29.1002 1.625 29.1002H6.77355C7.00817 28.4999 7.39362 27.9362 7.9299 27.4567ZM16.1635 20.093C14.8096 19.6392 13.7548 18.6674 13.2779 17.4601H1.625C0.727545 17.4601 0 18.1116 0 18.9152C0 19.7187 0.727545 20.3702 1.625 20.3702H15.8536L16.1635 20.093ZM17.5761 11.6401L18.4612 11.5425C19.069 11.332 19.5 10.8036 19.5 10.1851C19.5 9.38151 18.7725 8.73007 17.875 8.73007H1.625C0.727545 8.73007 0 9.38151 0 10.1851C0 10.9887 0.727545 11.6401 1.625 11.6401H17.5761ZM27.625 5.82005C28.4456 5.82005 29.1375 6.36798 29.238 7.09731L29.5315 9.23275C29.8958 11.8834 32.2283 13.9719 35.1887 14.2982L37.5736 14.561C38.388 14.6508 39 15.2703 39 16.0051C39 16.74 38.388 17.3595 37.5736 17.4492L35.1887 17.7121C32.2283 18.0384 29.8958 20.1268 29.5315 22.7776L29.238 24.913C29.1375 25.6423 28.4456 26.1902 27.625 26.1902C26.8044 26.1902 26.1125 25.6423 26.012 24.913L25.7186 22.7776C25.3542 20.1268 23.0218 18.0384 20.0614 17.7121L17.6765 17.4492C16.8619 17.3595 16.25 16.74 16.25 16.0051C16.25 15.2703 16.8619 14.6508 17.6765 14.561L20.0614 14.2982C23.0218 13.9719 25.3542 11.8834 25.7186 9.23275L26.012 7.09731C26.1125 6.36798 26.8044 5.82005 27.625 5.82005ZM27.625 13.0187C26.8031 14.2423 25.6562 15.2692 24.2897 16.0051C25.6563 16.7411 26.8031 17.7679 27.625 18.9915C28.4469 17.7679 29.5939 16.7411 30.9605 16.0051C29.5939 15.2692 28.4469 14.2424 27.625 13.0187ZM22.2747 20.7971C22.909 21.3654 22.9083 22.2867 22.2734 22.8547L12.5234 31.5743C11.8884 32.1424 10.8595 32.1418 10.2253 31.5732C9.59104 31.0046 9.59166 30.0835 10.2266 29.5155L19.9766 20.7956C20.6116 20.2278 21.6405 20.2284 22.2747 20.7971Z"
+                    fill="#212121"
+                    fill-opacity="0.6"
+                    class="discover--svg"
+                  />
+                </svg>
+                <p class="discover--p">Discover</p>
+              </li>
+              <li class="svg-hover">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="39"
+                  height="32"
+                  viewBox="0 0 45 36"
+                  fill="none"
+                >
+                  <path
+                    d="M39.9372 0C42.6169 0 44.8103 1.7529 44.9883 3.97119L45 4.26307V24.1617C45 26.4179 42.9182 28.2649 40.2839 28.415L39.9372 28.4248L30.3746 28.4242V33.1572L34.3146 33.158C35.2466 33.158 36.0022 33.7942 36.0022 34.579C36.0022 35.2984 35.3672 35.893 34.5434 35.9871L34.3146 36H10.6881C9.75608 36 9.00053 35.364 9.00053 34.579C9.00053 33.8596 9.63541 33.265 10.4591 33.171L10.6881 33.158L14.6236 33.1572V28.4242L5.0628 28.4248C2.38318 28.4248 0.189799 26.6718 0.0116785 24.4535L0 24.1617V4.26307C0 2.00675 2.08173 0.159836 4.71617 0.00983328L5.0628 0H39.9372ZM26.9971 28.4242H17.9966L17.9988 33.158H26.9994L26.9971 28.4242ZM39.9372 2.84205H5.0628C4.20842 2.84205 3.50235 3.37663 3.39059 4.07024L3.3752 4.26307V24.1617C3.3752 24.8812 4.01007 25.4757 4.8338 25.5697L5.0628 25.5828H39.9372C40.7916 25.5828 41.4977 25.0481 41.6095 24.3544L41.6248 24.1617V4.26307C41.6248 3.54365 40.99 2.94911 40.1663 2.85502L39.9372 2.84205ZM37.1342 5.68409C37.6864 5.68409 38.1459 6.01922 38.2411 6.46114L38.2593 6.63144V21.7936C38.2593 22.2587 37.8612 22.6456 37.3365 22.7258L37.1342 22.7409H16.8734C16.321 22.7409 15.8617 22.4059 15.7664 21.9639L15.7483 21.7936V6.63144C15.7483 6.16637 16.1463 5.77956 16.6711 5.69936L16.8734 5.68409H37.1342ZM12.3716 5.68409C12.924 5.68409 13.3833 6.01922 13.4786 6.46114L13.4967 6.63144V21.7936C13.4967 22.2587 13.0987 22.6456 12.5739 22.7258L12.3716 22.7409H7.8715C7.31919 22.7409 6.85984 22.4059 6.76457 21.9639L6.74644 21.7936V6.63144C6.74644 6.16637 7.14444 5.77956 7.66929 5.69936L7.8715 5.68409H12.3716Z"
+                    fill="#212121"
+                    fill-opacity="0.6"
+                    class="trending--svg"
+                  />
+                </svg>
+                <p class="trending--p">Trending</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="collection">
+            <p class="collection--title">Collections</p>
+            <ul>
+              <li class="svg-hover">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="39"
+                  height="39"
+                  viewBox="0 0 39 39"
+                  fill="none"
+                >
+                  <path
+                    d="M34.125 1.21875C34.125 0.545659 33.5792 0 32.9063 0H23.1563C22.4833 0 21.9375 0.545659 21.9375 1.21875C21.9375 1.89184 22.4833 2.4375 23.1563 2.4375H29.9639L19.4998 12.9014L15.4868 8.88825C15.2583 8.65966 14.9483 8.53125 14.625 8.53125C14.3018 8.53125 13.9918 8.65966 13.7632 8.88822L0.356978 22.2944C-0.118993 22.7704 -0.118993 23.5421 0.356978 24.0181C0.832924 24.4939 1.60459 24.4939 2.08053 24.0181L14.625 11.4736L18.6379 15.4868C18.8665 15.7153 19.1765 15.8438 19.4998 15.8438C19.823 15.8438 20.133 15.7154 20.3614 15.4868L31.6875 4.16103V10.9688C31.6875 11.6418 32.2333 12.1875 32.9063 12.1875C33.5792 12.1875 34.125 11.6418 34.125 10.9688V1.21875ZM17.0625 24.375C17.0625 21.6825 19.245 19.5 21.9375 19.5H34.125C36.8175 19.5 39 21.6825 39 24.375V34.125C39 36.8175 36.8175 39 34.125 39H21.9375C19.245 39 17.0625 36.8175 17.0625 34.125V24.375ZM32.9063 31.6875H23.1563C22.483 31.6875 21.9375 32.2333 21.9375 32.9062C21.9375 33.5792 22.483 34.125 23.1563 34.125H32.9063C33.5795 34.125 34.125 33.5792 34.125 32.9062C34.125 32.2333 33.5795 31.6875 32.9063 31.6875ZM23.1563 24.375C22.483 24.375 21.9375 24.9208 21.9375 25.5938C21.9375 26.2667 22.483 26.8125 23.1563 26.8125H32.9063C33.5795 26.8125 34.125 26.2667 34.125 25.5938C34.125 24.9208 33.5795 24.375 32.9063 24.375H23.1563Z"
+                    fill="#212121"
+                    class="playlist--svg"
+                  />
+                </svg>
+                <p class="playlist--p">Playlist</p>
+              </li>
+              <li>
+                <img src="imgs/star.svg" alt="graph" />
+                <p>Favourites</p>
+              </li>
+              <li>
+                <img src="imgs/Vector (3).svg" alt="graph" />
+                <p>Liked Music</p>
+              </li>
+              <li class="settings">
+                <img src="imgs/gear.svg" alt="gear icon" class="gear" />
+                <p>Settings</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="user">
+            <img
+              src="imgs/profileimage.png"
+              alt="user"
+              class="user--profileImg"
+            />
+            <p class="user--name">Donemzy</p>
+          </div>
+
+          <div class="tag">
+            <p class="tag--label1">Amazon Host</p>
+            <p class="tag--label2">Music is Life</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="main">
+        <div class="page--content">
+          <div class="page--bar">
+            <h4 class="page--title">Home&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+            <input
+              type="text"
+              placeholder="Search music"
+              class="search--field"
+            />
+            <img src="imgs/search.svg" alt="" class="search--icon" />
+          </div>
+          <!-- HOME -->
+          <div class="home">
+            <div class="about--section">
+              <p class="about--title">POPULAR CHART</p>
+              <div class="about--group">
+                <div class="chart--collection">
+                  <img src="imgs/bella.png" alt="" class="artist" />
+                  <img
+                    src="imgs/bellaSmallImg.svg"
+                    alt=""
+                    class="artist--small"
+                  />
+                  <p class="song--title">Party Next Door</p>
+                  <p class="artist--name">Bella Shmurda</p>
+                </div>
+                <div class="chart--collection">
+                  <img src="imgs/davido.png" alt="" class="artist" />
+                  <img
+                    src="imgs/davidoSmallImg.svg"
+                    alt=""
+                    class="artist--small"
+                  />
+                  <p class="song--title">A better Time</p>
+                  <p class="artist--name">Davido</p>
+                </div>
+                <div class="chart--collection">
+                  <img src="imgs/rema.png" alt="" class="artist" />
+                  <img
+                    src="imgs/remaSmallImg.svg"
+                    alt=""
+                    class="artist--small"
+                  />
+                  <p class="song--title">Calm Down</p>
+                  <p class="artist--name">Rema</p>
+                </div>
+                <div class="chart--collection">
+                  <img src="imgs/Zino.png" alt="" class="artist" />
+                  <img
+                    src="imgs/zinoSmallImg.svg"
+                    alt=""
+                    class="artist--small"
+                  />
+                  <p class="song--title">Blessings</p>
+                  <p class="artist--name">Zinoleskey</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="playlist">
+              <div class="create--playlist">
+                <div class="playlist--content">
+                  <p class="your--playlist">Your Playlist</p>
+                  <button class="add-to-playlist">
+                    <span>+</span> Create Playlist
+                  </button>
+                </div>
+                <div class="stream">
+                  <div class="stream--first__content">
+                    <div class="stream--song">
+                      <img src="imgs/bellastream.png" alt="bella Shmurda" />
+                      <div class="song--details">
+                        <p class="song--details__title">
+                          Best of Bella Shmurda
+                        </p>
+                        <p class="song--details__stream">Stream to the world</p>
+                      </div>
+                    </div>
+                    <div class="stream--song">
+                      <img src="imgs/davidostream.png" alt="David Adeleke" />
+                      <div class="song--details">
+                        <p class="song--details__title">Best of Davido</p>
+                        <p class="song--details__stream">Stream to the world</p>
+                      </div>
+                    </div>
+                    <div class="stream--song">
+                      <img src="imgs/remastream.png" alt="Rema" />
+                      <div class="song--details">
+                        <p class="song--details__title">Best of Rema</p>
+                        <p class="song--details__stream">Stream to the world</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="progress--bar">
+                    <div class="progress--level"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="top--artist__section">
+                <h2 class="top--artists">Top Artists</h2>
+                <ul class="top--artists__list">
+                  <li class="top--artists__item">
+                    <img src="imgs/rematop.svg" alt="rema" />
+                    <p>Rema</p>
+                  </li>
+                  <li class="top--artists__item">
+                    <img src="imgs/Fireboytop.svg" alt="fireboy" />
+                    <p>Fireboy</p>
+                  </li>
+                  <li class="top--artists__item">
+                    <img src="imgs/bellatop.svg" alt="Bella Shmurda" />
+                    <p>Bella Shmurda</p>
+                  </li>
+                  <li class="top--artists__item">
+                    <img src="imgs/olamidetop.svg" alt="olamide" />
+                    <p>Olamide</p>
+                  </li>
+                  <li class="top--artists__item">
+                    <img src="imgs/wizkidtop.svg" alt="wzkid" />
+                    <p>Wizkid</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="recent--played">
+                <img
+                  src="imgs/rhapsody.png"
+                  alt="music dashboard"
+                  class="rhapsody"
+                />
+                <div class="recent">
+                  <h2>Recent Played</h2>
+                  <ul class="recent--ul">
+                    <li class="recent--list">
+                      <img src="imgs/friend.svg" alt="rema" />
+                      <p>My Friend</p>
+                    </li>
+                    <li class="recent--list">
+                      <img src="imgs/baddest.svg" alt="fireboy" />
+                      <p>Badest Boy</p>
+                    </li>
+                    <li class="recent--list">
+                      <img src="imgs/bye.svg" alt="Bella Shmurda" />
+                      <p>Bye gone</p>
+                    </li>
+                    <li class="recent--list">
+                      <img src="imgs/forever.svg" alt="olamide" />
+                      <p>Forever</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="footer--logo">
+                <img src="imgs/logo.svg" alt="blueray company's logo" />
+                <p class="footer--brand__name">BLUERAY</p>
+              </div>
+
+              <div class="footer--content">
+                <div class="footer_list">
+                  <h2 class="footer--title">Browse</h2>
+                  <ul class="footer-ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Playlist</a></li>
+                    <li><a href="#">Favourites</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer_list">
+                  <h2 class="footer--title">About</h2>
+                  <ul class="footer-ul">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer_list">
+                  <h4 class="footer--title">Resources</h4>
+                  <ul class="footer-ul">
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">FAQS</a></li>
+                    <li><a href="#">legal </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DISCOVER -->
+
+          <div class="discover hide">
+            <div class="discover--content">
+              <svg
+                width="104"
+                height="58"
+                viewBox="0 0 36 47"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Standard Collection 15">
+                  <path
+                    id="Vector"
+                    d="M32.5935 47C32.0811 46.9996 31.5755 46.8806 31.1142 46.6517C30.6528 46.4228 30.2476 46.0898 29.9287 45.6777C28.942 44.5826 21.3159 36.8841 16.6428 32.1904C16.3194 31.87 16.0609 31.4871 15.8821 31.0634C15.7033 30.64 15.6078 30.1843 15.6011 29.7227C15.5944 29.2611 15.6766 28.8026 15.843 28.3737C16.0094 27.9449 16.2568 27.5542 16.5707 27.2239C16.8847 26.8939 17.2591 26.6307 17.6724 26.4499C18.0857 26.269 18.5297 26.1742 18.9789 26.1704C19.4281 26.1666 19.8736 26.2543 20.2896 26.4283C20.7057 26.6024 21.0841 26.8592 21.4032 27.1843C21.4366 27.2178 24.8022 30.5987 28.1426 33.976L29.1893 35.0345V18.5946C29.1893 12.2013 24.1699 6.99994 18 6.99994C11.8301 6.99994 6.81081 12.2013 6.81081 18.5946V43.4998C6.81081 44.428 6.45202 45.3183 5.81339 45.9746C5.17475 46.6309 4.30857 46.9996 3.4054 46.9996C2.50222 46.9996 1.63606 46.6309 0.997419 45.9746C0.358783 45.3183 0 44.428 0 43.4998V18.5946C0 8.34145 8.07474 0 18 0C27.9252 0 36 8.34145 36 18.5946V43.4998C35.9996 44.428 35.6406 45.3183 35.0018 45.9748C34.363 46.6311 33.4968 46.9998 32.5935 47ZM29.4975 44.954L29.4989 44.9572L29.4975 44.954Z"
+                    fill="white"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M18.0002 21.9589C20.1496 21.9589 21.892 20.1681 21.892 17.9589C21.892 15.7498 20.1496 13.9589 18.0002 13.9589C15.8507 13.9589 14.1082 15.7498 14.1082 17.9589C14.1082 20.1681 15.8507 21.9589 18.0002 21.9589Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1_11"
+                    x1="18"
+                    y1="47.564"
+                    x2="18"
+                    y2="0.140998"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0.9999" stop-color="#941A97" />
+                    <stop offset="1" stop-color="#12ECA0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_1_11"
+                    x1="18.0002"
+                    y1="47.5512"
+                    x2="18.0002"
+                    y2="0.134793"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0.9999" stop-color="#941A97" />
+                    <stop offset="1" stop-color="#12ECA0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <h1 class="discover--title">BLUERAY WORLD</h1>
+              <p>
+                A destination for music fans and creators showcasing original
+                content from around the globe,only on Blueray
+              </p>
+            </div>
+
+            <div class="top--five">
+              <h2>Top 5 on Our Dashboard</h2>
+              <img src="imgs/justin.png" alt="" class="artist--img" />
+              <img src="imgs/bellala.png" alt="" class="artist--img" />
+              <img src="imgs/ckay.png" alt="" class="artist--img" />
+              <img src="imgs/kiss.png" alt="" class="artist--img" />
+              <img src="imgs/seyivibez.png" alt="" class="artist--img" />
+            </div>
+
+            <div class="music--gift">
+              <div class="music--gift__content">
+                <div class="music--gift__detail">
+                  <img src="imgs/biberr.png" alt="justine biber" />
+                  <p>Music is a gift, receive it and listen with passion.</p>
+                </div>
+                <p id="music--gift__title">Music is a mile stone</p>
+                <div class="music--gift__date">
+                  <img src="imgs/biberrrsmal.png" alt="justine biber" />
+                  <p>Feb-05-2021</p>
+                </div>
+              </div>
+
+              <div class="music--gift__content">
+                <div class="music--gift__detail">
+                  <img src="imgs/edsheran.png" alt="justine biber" />
+                  <p>Music is a gift, receive it and listen with passion.</p>
+                </div>
+                <p id="music--gift__title">Music is a mile stone</p>
+                <div class="music--gift__date">
+                  <img src="imgs/edsheransmall.png" alt="justine biber" />
+                  <p>Feb-05-2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TRENDING -->
+          <div class="trending hide">
+            <div class="trending--search">
+              <input
+                type="text"
+                placeholder="Search for most trending artist"
+              />
+              <div id="select">
+                <p class="genre">
+                  Gnre: <span id="categories"> All Gnres </span>
+                </p>
+                <img src="imgs/Arrow 1.png" />
+              </div>
+            </div>
+
+            <div class="artist--profile__collection">
+              <div class="single--profile">
+                <img src="imgs/kizzdan.png" alt="kizz daniel" />
+                <p>Kizz Daniel</p>
+              </div>
+              <div class="single--profile">
+                <img src="imgs/perruzi.png" alt="Perruzi" />
+                <p>Perruzi</p>
+              </div>
+              <div class="single--profile">
+                <img src="imgs/banky w.png" alt="Banky W" />
+                <p>Banky W</p>
+              </div>
+              <div class="single--profile">
+                <img src="imgs/blaqbonez.png" alt="Blaqbonez" />
+                <p>Blaqbonez</p>
+              </div>
+              <div class="single--profile">
+                <img src="imgs/c.kay.png" alt="C kay" />
+                <p>C.kay</p>
+              </div>
+              <div class="single--profile">
+                <img src="imgs/erriga.png" alt="Erriga" />
+                <p>Erriga</p>
+              </div>
+            </div>
+
+            <div class="playing">
+              <div class="play">
+                <img src="imgs/dandizzy.png" alt="dandizzy" />
+                <div class="play--detail">
+                  <p>Dandizzy</p>
+                  <p>Speechless</p>
+                  <p>Released: 14th Feb 2021</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="playing--dashboard">
+              <div class="playing--title">
+                <div class="playing--title__artist">
+                  <p>Speechless</p>
+                  <p>Dan + Shey</p>
+                </div>
+                <img src="imgs/love.png" />
+              </div>
+              <div class="progress-bar">
+                <div class="progress--level"></div>
+              </div>
+              <img class="progress--ball" src="imgs/ball.png" />
+              <div class="progress--counter">
+                <div class="progress--level"></div>
+              </div>
+              <div class="progres--indicators">
+                <p>0:02</p>
+                <p>-3:31</p>
+              </div>
+              <div class="play--features">
+                <img src="imgs/shuffle.png" alt="" class="shuffles" />
+                <img src="imgs/blackball.png" alt="" class="blackball" />
+                <img src="imgs/frequency.png" alt="" class="frequency" />
+                <div class="pause"></div>
+                <div class="pause--two"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLAYLIST SECTION-->
+          <div class="playlist--section hide">
+            <div class="bluray--intro">
+              <h1>Discover New Playlist With Blueray</h1>
+              <p>
+                Blueray specially created playlist for you to go through the way
+                of music scene getting you the music you love and you can stream
+                excluisively
+              </p>
+            </div>
+
+            <div class="verified">
+              <p>Verified Series Playlist</p>
+            </div>
+            <div class="artist--profile__collection">
+              <div class="single--profile">
+                <img id="playlist--section__img" src="imgs/hightension.png" />
+                <p>High Tension</p>
+              </div>
+              <div class="single--profile">
+                <img
+                  id="playlist--section__img"
+                  src="imgs/hightension2.0.png"
+                />
+                <p>High Tension 2.0</p>
+              </div>
+              <div class="single--profile">
+                <img id="playlist--section__img" src="imgs/usacanada.png" />
+                <p>My friend</p>
+              </div>
+              <div class="single--profile">
+                <img id="playlist--section__img" src="imgs/happy.png" />
+                <p>Forever</p>
+              </div>
+              <div class="single--profile">
+                <img id="playlist--section__img" src="imgs/risky.png" />
+                <p>Risky</p>
+              </div>
+              <div class="single--profile">
+                <img id="playlist--section__img" src="imgs/catchme.png" />
+                <p>Catch me</p>
+              </div>
+              <div class="single--profile">
+                <img id="playlist--section__img" src="imgs/personal.png" />
+                <p>Personal</p>
+              </div>
+              <div class="single--profile">
+                <img id="playlist--section__img" src="imgs/vision2020.png" />
+                <p>Vision2020</p>
+              </div>
+              <div class="single--profile">
+                <img id="playlist--section__img" src="imgs/world.png" />
+                <p>World</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
